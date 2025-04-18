@@ -19,7 +19,7 @@ st.markdown(
 )
 
 #title and description
-st.title("Datasweeper Sterling Integretor By Sehar Rehan")
+st.title("📀Datasweeper Sterling Integretor By Sehar Rehan")
 st.write("Transform your files between CSV and Excel formats with built-in data cleaning and visualization Creating the project for quater 3!")
 
 
@@ -54,7 +54,7 @@ if uploaded_files:
 
             with col2:
                 if st.button(f"Fill missing values for{file.name}"):
-                    numeric_cols = df.select_dtypes(includes=['number']).columns
+                    numeric_cols = df.select_dtypes(include=['number']).columns
                     df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].mean())
                     st.write("✅ Missing values have been filled!")
 
@@ -79,7 +79,7 @@ if uploaded_files:
                 mime_type = "text/csv"
 
             elif conversion_type == "Excel":
-                df.to.to_excel(buffer, index=False)
+                df.to_excel(buffer, index=False)
                 file_name = file.name.replace(file_ext, ".xlxl")
                 mime_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             buffer.seek(0)  
