@@ -12,15 +12,15 @@ st.markdown(
          background-color:black;
          color:white;
          }
-    </style>
-    """,
-    unsafe_allow_html=True
+         </style>
+         """,
+         unsafe_allow_html=True
 
 )
 
 #title and description
 st.title("Datasweeper Sterling Integretor By Sehar Rehan")
-st.title("Transform your files between CSV and Excel formats with built-in data cleaning and visualization Creating the project for quater 3!")
+st.write("Transform your files between CSV and Excel formats with built-in data cleaning and visualization Creating the project for quater 3!")
 
 
 #file uploader
