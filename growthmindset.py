@@ -24,7 +24,7 @@ st.title("Transform your files between CSV and Excel formats with built-in data 
 
 
 #file uploader
-uploaded_files = st.file_uploader("Upload your files (CSV aor Excel):", tpye=["cvs","xlsx"],accept_multiple_files=(True))
+uploaded_files = st.file_uploader("Upload your files (accepts CSV or Excel):", tpye=["cvs","xlsx"], accept_multiple_files=(True))
  
 if uploaded_files:
     for file in uploaded_files:
